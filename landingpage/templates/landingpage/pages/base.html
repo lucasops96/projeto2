@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-size: 1.6rem;   
+        }
+
+        .main-header-container{
+            background: red;
+            margin: 0 auto;
+        }
+
+        .main-header-container img {
+            with:60px;
+            height:60px;
+        }
+
+        .main-header{
+            margin: 0 0 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: rigth;
+            gap: 20px;
+        }
+        .main-header-links a {
+            text-decoration: none;
+            color: black;
+            padding: 15px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="main-header-container">
+       <div class="main-header">
+            <div class="header-logo">
+                <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="html">
+            </div>
+            <div class="main-header-links">
+                <a href="">Home</a>
+                <a href="">Menu</a>
+            </div>
+       </div>
+    </header>
+
+    <main class="main-content">
+        {% block content  %}{% endblock content %}
+    </main>
+
+</body>
+</html>
