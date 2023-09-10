@@ -54,7 +54,7 @@ body{
     border-right: 1px solid black;
 }
 
-.home-content{
+.page-content{
     padding:30px;
     flex-grow: 1;
 }

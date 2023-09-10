@@ -1,18 +1,15 @@
 <div class="sidebar">
     <div class="sidebar-content">
         <ul>
-            <li>Coffee</li>
-            <li>Tea</li>
-            <li>Milk</li>
-            <li>Coffee</li>
-            <li>Tea</li>
-            <li>Milk</li>
-            <li>Coffee</li>
-            <li>Tea</li>
-            <li>Milk</li>
-            <li>Coffee</li>
-            <li>Tea</li>
-            <li>Milk</li>
+            <a href="{% url 'landingpage:coffee' %}">
+                <li>Coffee</li>
+            </a>
+            <a href="{% url 'landingpage:tea' %}">
+                <li>Tea</li>
+            </a>
+            <a href="{% url 'landingpage:milk' %}">
+                <li>Milk</li>
+            </a>
         </ul>
     </div>
 </div>
